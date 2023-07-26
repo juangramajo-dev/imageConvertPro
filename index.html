@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ImageConvertPro - Convertir Imágenes</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <!-- Metadatos para mejorar el SEO -->
+  <meta name="description" content="Convierte imágenes a diferentes formatos fácilmente.">
+  <meta name="keywords" content="convertir, imágenes, PNG, JPEG, GIF, ICO, herramienta, aplicación,Conversión de imágenes
+  Formatos de imagen,
+  Convertidor de imágenes,
+  PNG,
+  JPEG,
+  GIF,
+  ICO,
+  Herramienta de conversión,
+  Aplicación de imágenes,
+  Cambiar formato de imágenes,
+  Descargar imágenes,
+  Transformar imágenes,
+  Optimización de imágenes,
+  Comprimir imágenes,
+  Resolución de imágenes,
+  Procesamiento de imágenes,
+  Conversor de formatos gráficos,
+  Editor de imágenes,
+  Redimensionar imágenes,
+  Editar metadatos de imágenes,">
+  <meta name="author" content="Juan Gramajo">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6353475553835738"
+     crossorigin="anonymous"></script>
+
+  <!-- Incluye Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/flatly/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="bg-light">
+  <!-- Barra de scroll -->
+  <div class="progreso">
+    <span class="barra"></span>
+  </div>
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-md bg-primary navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="./img/logo-imageConvert.pro.png" alt="ImageConvertPro"> </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#informacion">¿Cómo funciona?</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#convertir">Convertir imagen</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sección Inicio (Jumbotron) -->
+  <div class="jumbotron">
+    <div class="container d-flex flex-column align-items-center">
+      <h1 class="font-weight-bold mt-5 first-title">ImageConvertPro</h1>
+      <h2 class="font-weight-normal col-md-8 mt-3 h3">Bienvenido a nuestra aplicación para convertir imágenes a diferentes formatos.</h2>
+      
+      <p class="col-sm-12 col-md-8 mt-3 ">Transforma tus imágenes al instante con ImageConvertPro. Convierte entre formatos populares como PNG, JPEG, GIF e ICO en un abrir y cerrar de ojos. ¡Simplifica tu flujo de trabajo y obtén imágenes de calidad en el formato que necesitas con nuestra herramienta fácil de usar! Pruébalo ahora y desata el poder de la conversión de imágenes.</p>
+      <a class="col-sm-8 col-md-3 p-3 btn btn-outline-primary mt-3 text-decoration-none" href="#selectImg">Comenzar</a>
+    </div>
+  </div>
+
+  <!-- Sección Información -->
+  <section id="informacion" class="section bg-secondary text-light  ">
+    <div class="container ">
+      <h2 class="h1 font-weight-bold pt-md-5">¿Cómo funciona?</h2>
+      <p class="h2">Simplemente sigue estos pasos:</p>
+      <ol class="lista">
+        <li>1 - Selecciona una imagen haciendo click o arrastrando la misma en la sección 
+          <a style="text-decoration: none;" href="#selectImg">Seleccionar imagen</a> .</li>
+        <li>2 - La imagen se mostrará a continuación.</li>
+        <li>3 - Selecciona el formato al que deseas convertir la imagen.</li>
+        <li>4 - Haz clic en el botón "Convertir".</li>
+        <li>5 - ¡Listo! Tu imagen se descargará en el formato seleccionado.</li>
+      </ol>
+      <p class="font-weight-bold h4 mt-4">¡Es así de fácil! Prueba nuestra herramienta ahora.</p>
+    </div>
+  </section>
+
+  <!-- Zona para seleccionar imagen -->
+  <section id="selectImg" class="bg-light text-center">
+    <div class="container mt-5 mb-5" id="convertir">
+      <h2>Seleccionar imagen</h2>
+      <div class="row mt-3">
+        <div class="col-12">
+          <div class="drop-zone" id="dropZone">
+            <label for="imageInput">
+              <p class="p-drop-zone">Arrastra y suelta una imagen aquí o haz clic para seleccionarla</p>
+            </label>
+            <input type="file" id="imageInput" accept="image/*" class="d-none">
+          </div>
+          <img class="image-preview d-none " id="imagePreview" src="#" alt="Vista previa de la imagen" title="Vista previa de la imagen"> <br>
+          <label for="formatSelect" class="h4">Selecciona el formato:</label>
+          <select class="form-control" id="formatSelect">
+            <option value="png">PNG</option>
+            <option value="jpeg">JPEG</option>
+            <option value="gif">GIF</option>
+            <option value="ico">ICO</option>
+          </select>
+  <button class="btn btn-outline-primary mt-4" id="convertButton">Convertir</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+ 
+  <footer class="text-center font-weight-bold card-footer bg-dark text-light" id=footer> <div class=row>
+    <div class="col-lg-12 "  id="copyright">
+    </div>
+ </div></footer>
+  <!-- Incluye FileSaver.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+
+  <!-- Incluye jQuery y Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Asegúrate de que app.js contenga el código necesario para hacer que la aplicación funcione correctamente -->
+   <script>
+    // Obtén el año actual
+    var anioActual = new Date().getFullYear();
+
+    // Crea el mensaje de copyright
+    var mensajeCopyright = "© " + anioActual + " ImageConvertPro - JG Dev - Todos los derechos reservados.";
+
+    // Muestra el mensaje en un elemento HTML con el id "copyright"
+    document.getElementById("footer").textContent = mensajeCopyright;
+ </script>
+
+ <script>
+  const bodyEl = document.body;
+const barEl = document.querySelector('.barra')
+const updateBar = () => {
+  let scrollPos = (window.scrollY / (bodyEl.scrollHeight - window.innerHeight)) * 100
+  barEl.style.width = `${scrollPos}%`
+  requestAnimationFrame(updateBar)
+}
+updateBar()
+ </script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

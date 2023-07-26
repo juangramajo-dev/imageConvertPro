@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Chau+Philomene+One&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    transition: 1s all ease-in ;
+}
+
+body {
+    padding-top: 50px;
+}
+
+li, p{
+    font-size: 18px;
+}
+
+.progreso{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 5px;
+    background-color: #2c2c2c;
+}
+.barra{
+    display: block;
+    width: 0;
+    height: inherit;
+    background-image: linear-gradient(90deg,#b433ff, #31acff, #0170f0);
+}
+
+.navbar {
+    box-shadow: 1px 1px 15px 1px rgba(115, 115, 115, 0.859);
+}
+
+.navbar img{
+    width: 80px;
+    border-radius: 15px;
+}
+.navbar a{
+   font-size: 16px;
+}
+
+.jumbotron {
+    background-image: url('https://www.aspose.com/img/bg-newheader.webp');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    margin-bottom: 0;
+}
+.btn{
+    border-radius: 15px;
+}
+
+.section {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.section h2 {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+
+/* Estilos para la zona de arrastrar y soltar */
+.drop-zone {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.drop-zone p {
+    font-size: 16px;
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    line-height: 3.5rem;
+    margin-top: 1rem;
+
+}
+
+.image-preview {
+    max-width: 100%;
+    max-height: 200px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.lista li{
+    list-style:none;
+    margin: 20px;
+    font-weight: 500;
+}
+
+.first-title{
+    font-family: 'Chau Philomene One', sans-serif;
+}
+
